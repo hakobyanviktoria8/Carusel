@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-size: 75px;
+    text-shadow: 5px 3px 5px #ff6fe9;
+    text-align: center;
+    color: #6500ff;
+}
+.container{
+    position: relative;
+    width: 1500px;
+    margin: 0 auto;
+}
+.slide {
+    display: none;
+    border-radius: 10px;
+}
+.cont-slide {
+    width: 400px;
+    position: relative;
+    margin: auto;
+}
+
+/*button prev next*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    user-select: none;
+}
+.prev img, .next img{
+    width: 60px;
+}
+.prev{
+    left: -100px;
+}
+.next {
+    right: -100px;
+}
+
+/*small images*/
+.images {
+    margin: 15px auto;
+    width: 700px;
+}
+.images img{
+    border-radius: 5px;
+    margin: 2px;
+    width: 60px;
+    display: inline-block;
+    opacity: 0.6;
+    border: 2px solid #fad7fa;
+}
+.images .active, .images img:hover{
+    opacity: 1;
+    border: none;
+}
+
+/*bubble*/
+.bublle{
+    overflow: hidden;
+}
+.circle{
+    background-image: linear-gradient(white ,#fad7fa , #8724ff);
+    border: 1px solid #fad7fa;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 60%;
+    animation-iteration-count: infinite;
+}
+.circle1{
+    width: 80px;
+    height: 80px;
+    animation-name: circle1;
+    animation-duration: 3s;
+}
+@keyframes circle1 {
+    0%   { bottom: 0; left: 20px;}
+    100% {bottom: 850px;;left: 20px;}
+}
+.circle2{
+    width: 50px;
+    height: 50px;
+    animation-name: circle2;
+    animation-duration: 2.5s;
+}
+@keyframes circle2 {
+    0%   { bottom: 0; left: 120px;}
+    100% {bottom: 870px; left: 120px;}
+}
+.circle3{
+    width: 70px;
+    height: 70px;
+    animation-name: circle3;
+    animation-duration: 2s;
+}
+@keyframes circle3 {
+    0%   { bottom: 0;right: 120px;}
+    100% {bottom: 850px;right: 120px;}
+}
+.circle4{
+    width: 30px;
+    height: 30px;
+    animation-name: circle4;
+    animation-duration: 2.4s;
+    animation-timing-function: linear;
+}
+@keyframes circle4 {
+    0%   {bottom: 0; left: 50px;}
+    25% {bottom: 150px; left: 80px;}
+    50% {bottom: 300px; left: 50px;}
+    75% {bottom: 450px; left: 80px;}
+    100% {bottom: 760px;left: 50px;}
+}
+.circle5{
+    width: 50px;
+    height: 50px;
+    animation-name: circle5;
+    animation-duration: 3.5s;
+}
+@keyframes circle5 {
+    0%   { bottom: 0; right: 230px;}
+    100% {bottom: 780px; right: 230px;}
+}
+.circle6{
+    width: 30px;
+    height: 30px;
+    animation-timing-function: linear;
+    animation-name: circle6;
+    animation-duration: 2.5s;
+}
+@keyframes circle6 {
+    0%   { bottom: 0; right: 300px;}
+    25% {bottom: 150px; right: 280px;}
+    50% {bottom: 300px; right: 250px;}
+    75% {bottom: 450px; right: 280px;}
+    100% {bottom: 870px; right: 300px;}
+}
+.circle7{
+    width: 60px;
+    height: 60px;
+    animation-timing-function: linear;
+    animation-name: circle7;
+    animation-duration: 3s;
+}
+@keyframes circle7 {
+    0%   { bottom: 0; right: 350px;}
+    25% {bottom: 150px; right: 380px;}
+    50% {bottom: 300px; right: 350px;}
+    75% {bottom: 450px; right: 330px;}
+    100% {bottom: 650px; right: 350px;}
+}
+.circle8{
+    width: 40px;
+    height: 40px;
+    animation-timing-function: linear;
+    animation-name: circle8;
+    animation-duration: 4s;
+}
+@keyframes circle8 {
+    0%   {bottom: 0; left: 50px;}
+    25% {bottom: 150px; left: 70px;}
+    50% {bottom: 300px; left: 90px;}
+    75% {bottom: 450px; left: 60px;}
+    100% {bottom: 700px; left: 40px;}
+}
+.circle9{
+    width: 40px;
+    height: 40px;
+    animation-timing-function: linear;
+    animation-name: circle9;
+    animation-duration: 3s;
+}
+@keyframes circle9 {
+    0%   {bottom: 0; left: 340px;}
+    100% {bottom: 750px; right: 400px;}
+}
+.circle10{
+    width: 40px;
+    height: 40px;
+    animation-timing-function: linear;
+    animation-name: circle10;
+    animation-duration: 2s;
+}
+@keyframes circle10 {
+    0%   {bottom: 0; right: 20px;}
+    100% {bottom: 750px; right: 40px;}
+}
